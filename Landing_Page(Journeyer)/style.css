@@ -30,18 +30,21 @@ nav{
     margin-left: 12.5%;
 }
 .menu a{
+    letter-spacing: 1px;
     text-decoration: none;
-    color: rgb(16, 245, 226);
+    color:#fff;
     padding: 10px 20px;
     font-size: large;
     font-family: sans-serif;
 }
 .menu a:hover{
-    color: rgb(255, 255, 255)
+    color: rgb(255, 128, 128);
+    border-bottom: 2px solid rgb(255, 128, 128) ;
+    border-bottom-width: 2px;
 }
 .register{
     background-color: red;
-    color: aqua;
+    color: white;
     font-weight: 900;
     padding: 10px 15px;
     border-radius: 10px;
@@ -52,6 +55,5 @@ nav{
 }
 .register:hover{
     background-color: rgb(177, 26, 26);
-    border-color: white;
-    border-width:thick
+
 }
