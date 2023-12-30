@@ -42,7 +42,7 @@ nav{
     border-bottom: 2px solid rgb(255, 128, 128) ;
     border-bottom-width: 2px;
 }
-.register{
+.book{
     background-color: red;
     color: white;
     font-weight: 900;
@@ -54,7 +54,7 @@ nav{
     font-family: sans-serif;
 
 }
-.register:hover{
+.book:hover{
     background-color: rgb(177, 26, 26);
 }
 .container{
