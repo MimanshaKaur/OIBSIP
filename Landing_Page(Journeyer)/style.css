@@ -209,7 +209,7 @@ footer{
     padding: 15px 20px;
     font-weight: bolder;
     font-family: sans-serif;
-    background-color: transparent; 
+    background-color: transparent;
     border: 3px solid rgb(17, 12, 45);
     border-radius: 15px;
     margin-left: 12%;
@@ -221,8 +221,25 @@ footer{
     border: 3px solid rgb(17, 12, 45);
 }
 .icon{
-    display: list-item;
-    vertical-align: middle;
 
-    
+    flex-direction: column;
+    filter: brightness(250%);
+    margin-top: -22%;
+    margin-left: 94%;
+}
+.icon1:hover{
+    cursor: pointer;
+    zoom: 90%;
+}
+.icon2:hover{
+    cursor: pointer;
+    zoom: 90%;
+}
+.icon3:hover{
+    cursor: pointer;
+    zoom: 90%;
+}
+.icon4:hover{
+    cursor: pointer;
+    zoom: 90%;
 }
