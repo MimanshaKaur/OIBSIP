@@ -166,7 +166,7 @@ footer{
     letter-spacing: 2px;
 }
 .main1{
-    color: rgb(86, 84, 84);
+    color: rgb(17, 12, 45);
     font-size: 27px;
     font-family:sans-serif;
     letter-spacing: 2px;
@@ -183,10 +183,11 @@ footer{
     margin-left: 15%;
 }
 .main3{
-    color: white;
-    font-size: 72px;
+    color: rgb(17, 12, 45);
+    font-size: 70px;
     margin-top: 12%;
     margin-left: 2%;
+    font-weight: bold;
 }
 .main4{
     color: white;
@@ -264,9 +265,10 @@ footer{
     font-size: 78px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: -webkit-linear-gradient(#ef21bb,#ff6200);
-    -webkit-background-clip : text;
+    background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 .is{
     color: white;
