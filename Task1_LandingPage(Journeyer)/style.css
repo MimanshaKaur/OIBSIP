@@ -309,7 +309,7 @@ footer{
 .container3{
     width: 35%;
     height: 90vh;
-    background-color: white;
+    background-color: aqua;
     margin-top: -587.5px;;
     margin-left: 4%;
     display:  flex;
@@ -416,33 +416,68 @@ footer{
 }
 .container9{
     width: 100%;
-    height: 65vh;
-    margin-top: 5%;
+    height: 45vh;
+    margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
 }
 .cont9_1{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
     width: 22%;
-    height: 50vh;
-    background-color: gold;
+    height: 43vh;
+    background-color: transparent;
     margin-left: 90px;
+    border: 5px solid gold;
+    border-radius: 15px;
 }
 .cont9_2{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
     width: 22%;
-    height: 50vh;
-    background-color: gold;
+    height: 43vh;
+    background-color: transparent;
     margin-left: 40px;
+    border: 5px solid gold;
+    border-radius: 15px;
 }
 .cont9_3{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
     width: 22%;
-    height: 50vh;
-    background-color: gold;
+    height: 43vh;
+    background-color: transparent;
     margin-left: 40px;
+    border: 5px solid gold;
+    border-radius: 15px;
 }
 .cont9_4{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
     width: 22%;
-    height: 50vh;
-    background-color: gold;
+    height: 43vh;
+    background-color: transparent;
     margin-left: 40px;
     margin-right: 90px;
+    border: 5px solid gold;
+    border-radius: 15px;
+}
+.container10{
+    width: 100%;
+    height: 45vh;
+    margin-top: -30%;
+    display: flex;
+    justify-content: space-evenly;
 }
