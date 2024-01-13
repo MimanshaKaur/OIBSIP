@@ -1,20 +1,24 @@
 *{
-    background: #0b090a;
+    background: black;
     color: aliceblue;
     font-size: 60px;
 }
 .header{
+    color: #ffffff;
     width: 100%;
     height: 10vh;
-    background: gray;
+    background: transparent;
     margin-top: -8px;
+    display: flex;
+    justify-content: space-between;
 }
 .container1{
-    color: #ED3928;
+    color: #f3804b;
     font-size: 80px;
-    width: 100%;
-    height: 88vh;
-    background: black;
+    width: 101%;
+    height: 105vh;
+    margin-left: -9px;
+    background-image: url(./images_icons2/bg1.png);
     background-position: center;
     background-size: cover;
 }
