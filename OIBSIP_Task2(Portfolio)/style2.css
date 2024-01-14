@@ -1,5 +1,5 @@
-*{
-    background: transparent;
+body{
+    background: #371E34;
     color: aliceblue;
     font-size: 60px;
 }
@@ -104,6 +104,7 @@ a{
 }
 .main-ctn2{
     width: fit-content;
+    margin-top: 4%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -143,7 +144,7 @@ a{
     width: fit-content;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .main-ctn3-content{
     color: #fff;
@@ -152,7 +153,44 @@ a{
 .main-ctn3-iconbox{
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 9%;
     margin-left: 0%;
+}
+.container2{
+    width: 100%;
+    height: 92vh;
+    background: #371E34;
+    display: flex;
+    justify-content: space-between;
+}
+.container2-1{
+    width: 50%;
+    height: 85vh;
+    background-color: #7b4574;
+    margin-top: 30px;
+    border: 3px dotted wheat;
+    border-radius: 200px;
+}
+.container2-2{
+    width: 50%;
+    height: 92vh;
+}
+.container2-2-1{
+    width: fit-content;
+    height: 82px;
+    color: #fc7753;
+    font-size: 80px;
+    margin-top: 8%;
+    margin-left: 5%;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 8px dotted  #fc7753;
+}
+.container2-2-2{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 25px;
+    text-align: justify;
 }
