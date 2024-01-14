@@ -300,11 +300,12 @@ a{
 }
 .cont-4-2-1{
     width: 30%;
-    height: 62.5vh;
+    height: 65vh;
     background-color: #57104e;
     border: 2px solid #b47cae;
     border-radius: 25px;
     position: relative;
+    margin-left: 2.8%;
 }
 .cont4-2-1-1{
     width: fit-content;
@@ -315,7 +316,6 @@ a{
     font-family: sans-serif;
     font-size: 25px;
     font-weight: bolder ;
-    margin-top: 2%;
     background-color: #fff;
 }
 .cont4-2-1-2{
@@ -323,8 +323,8 @@ a{
     height: 7vh;
     margin-top: 2%;
     background-color: #34082e;
-    border-top: 2px dotted white;
-    border-bottom: 2px dotted white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .html-btn{
     color: #fff;
@@ -334,7 +334,6 @@ a{
     border: 1px solid #bda6ba;
     border-radius: 20px;
     background-color: #7b4574;
-    cursor: pointer;
     margin-left: 35px;
     font-family: sans-serif;
     margin-top: 2.5%;
@@ -344,7 +343,7 @@ a{
     color: #fff;
     font-size: 20px;
     font-weight: bolder;
-    padding: 2px 20px;
+    padding: 2px 18px;
     padding-bottom: 6px;
     cursor: pointer;
     background-color: black;
@@ -358,18 +357,63 @@ a{
     background-color: #fff;
     border: 2px solid #fff;
 }
-.all_proj-btn{
-    width: 100%;
+.proj-btn{
+    width: fit-content;
     padding: 8px 50px;
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     font-family: sans-serif;
     margin-top: -5%;
-    margin-left: 37%;
+    margin-left: 39%;
     background-color: #57104e;
-    border: 2px solid #fff;
+    border: 2px solid #34082e;
     border-radius: 15px;
 }
-.all_proj-btn:hover{
-    background-color: yellowgreen;
+.footer-container{
+    width: 101.2%;
+    margin-left: -0.78%;
+    height: 30vh;
+    background-color: transparent;
+    border-top: 3px dotted white;
+    border-bottom: 3px dotted white;
+    margin-top: 1.8%;
+}
+.foot-cont1{
+    width: 100%;
+    color: #fc7753;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+.foot-cont2{
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+}
+.contact2-btn{
+    color: #fff;
+    width: fit-content;
+    font-size: 20px;
+    font-family: sans-serif;
+    background: #fc7753;
+    border: 3px solid #fc7753;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-right: -12%;
+    margin-top: 15px;
+    margin-left: 43%;
+    cursor: pointer ;
+}
+.contact2-btn:hover{
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fc7753;
 }
