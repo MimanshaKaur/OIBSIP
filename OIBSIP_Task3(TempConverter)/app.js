@@ -1,38 +1,36 @@
-let celsiusInput = document.querySelector('#celsius > input')
-let fahrenheitInput = document.querySelector('#fahrenheit > input')
-let kelvinInput = document.querySelector('#kelvin > input')
-let btn = document.querySelector('.button')
+let cel = document.getElementById("celsius")
+let fah = document.getElementById("fahrenheit")
+let kel = document.getElementById("kelvin")
+let btn = document.getElementById('.button')
 function roundNumber(number){
     return Math.round(number*100)/100
 }
-/* Celcius to Fahrenheit and Kelvin */
-celsiusInput.addEventListener('input', function(){
-    let cTemp = parseFloat(celsiusInput.value)
-    let fTemp = (cTemp*(9/5)) + 32
-    let kTemp = cTemp + 273.15
-    fahrenheitInput.value = roundNumber(fTemp)
-    kelvinInput.value = roundNumber(kTemp)
+/*Celsius to Fahrenheit and Kelvin*/
+cel.addEventListener('input', function(){
+    let c = this.value;
+    let f =(c * 9/5) + 32;
+    let k = parseFloat(c) + 273.15;
+    fah.value = roundNumber(f);
+    kel.value = roundNumber(k);
 })
-/* Fahrenheit to Celcius and Kelvin */
-fahrenheitInput.addEventListener('input', function(){
-    let fTemp = parseFloat(fahrenheitInput.value)
-    let cTemp = (fTemp - 32) * (5/9)
-    let kTemp = (fTemp -32) * (5/9) + 273.15
-
-    celsiusInput.value = roundNumber(cTemp)
-    kelvinInput.value = roundNumber(kTemp)
+/*Fahrenheit to celsius and kelvin*/
+fah.addEventListener('input', function(){
+    let f = this.value;
+    let c = (f - 32) * 5/9;
+    let k = (f - 32) * 5/9 + 273.15;
+    kel.value = roundNumber(k);
+    cel.value = roundNumber(c);
 })
-/* Kelvin to Celcius and Fahrenheit */
-kelvinInput.addEventListener('input', function(){
-    let kTemp = parseFloat(kelvinInput.value)
-    let cTemp = kTemp - 273.15
-    let fTemp = (kTemp - 273.15) * (9/5) + 32
-
-    celsiusInput.value = roundNumber(cTemp)
-    fahrenheitInput.value = roundNumber(fTemp)
+/* Kelvin to Celsius and Fahrenheit*/
+kel.addEventListener('input', function(){
+    let k = this.value;
+    let c = parseFloat(k) - 273.15;
+    let f = (parseFloat(k) - 273.15) * (9/5) + 32;
+    cel.value = roundNumber(c);
+    fah.value = roundNumber(f);
 })
-btn.addEventListener('click', ()=>{
-    celsiusInput.value = ""
-    fahrenheitInput.value = ""
-    kelvinInput.value = ""
+btn.addEventListener('click', function(){
+    cel.value = "";
+    fah.value = "";
+    kel.value = "";
 })
