@@ -1,4 +1,3 @@
-// script.js
 const celsiusField = document.querySelector("#celsius");
 const degree = document.querySelector("#degree");
 const convertBtn = document.querySelector("#convert-btn");
@@ -15,7 +14,6 @@ if(degree.value === ""){
     convertBtn.removeAttribute('disabled');
     }, 4000);
 }
-
 convertBtn.addEventListener("click", (e) => {
     e.preventDefault();
     convertToCelsius();
