@@ -1,36 +1,39 @@
-let cel = document.getElementById("celsius")
-let fah = document.getElementById("fahrenheit")
-let kel = document.getElementById("kelvin")
-let btn = document.getElementById('.button')
-function roundNumber(number){
-    return Math.round(number*100)/100
+// script.js
+const celsiusField = document.querySelector("#celsius");
+const degree = document.querySelector("#degree");
+const convertBtn = document.querySelector("#convert-btn");
+const tempType = document.querySelector("#temp-type");
+
+window.addEventListener("load", () =>{
+    degree.value = "";
+    celsiusField.innerHTML = "";
+});
+
+if(degree.value === ""){
+    convertBtn.setAttribute("disabled","");
+    setTimeout(() => {
+    convertBtn.removeAttribute('disabled');
+    }, 4000);
 }
-/*Celsius to Fahrenheit and Kelvin*/
-cel.addEventListener('input', function(){
-    let c = this.value;
-    let f =(c * 9/5) + 32;
-    let k = parseFloat(c) + 273.15;
-    fah.value = roundNumber(f);
-    kel.value = roundNumber(k);
-})
-/*Fahrenheit to celsius and kelvin*/
-fah.addEventListener('input', function(){
-    let f = this.value;
-    let c = (f - 32) * 5/9;
-    let k = (f - 32) * 5/9 + 273.15;
-    kel.value = roundNumber(k);
-    cel.value = roundNumber(c);
-})
-/* Kelvin to Celsius and Fahrenheit*/
-kel.addEventListener('input', function(){
-    let k = this.value;
-    let c = parseFloat(k) - 273.15;
-    let f = (parseFloat(k) - 273.15) * (9/5) + 32;
-    cel.value = roundNumber(c);
-    fah.value = roundNumber(f);
-})
-btn.addEventListener('click', function(){
-    cel.value = "";
-    fah.value = "";
-    kel.value = "";
-})
+
+convertBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    convertToCelsius();
+    convertBtn.innerHTML = "<span class='icon'><i class='fa fa-spinner fa-spin'></i> Converting...</span>";
+    setTimeout(() => {
+    convertBtn.innerHTML ="<span>Convert</span>"
+    }, 1000);
+});
+
+function convertToCelsius() {
+    let inputValue = degree.value;
+    setTimeout( () => {
+        if (tempType.value === "Fahrenheit") {
+            const FahrenheitToCelsius = (inputValue - 32) * (5 / 9);
+            celsiusField.innerHTML = `${FahrenheitToCelsius.toFixed(3)} &deg;C`;
+        } else if (tempType.value === "Kelvin") {
+            const KelvinToCelsius = inputValue - 273.15;
+            celsiusField.innerHTML = `${KelvinToCelsius.toFixed(3)} &deg;C`;
+        }
+    }, 1200)
+}
