@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-image: url(./images3/bg1.png);
 }
 input{
     width: 75%;
@@ -10,7 +10,7 @@ input{
     border-radius: 25px;
     text-align: center;
     color: #fff;
-    background-color: black;
+    background-color: rgb(34, 34, 34);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -23,13 +23,15 @@ input{
 }
 .container2{
     width: 80%;
-    height: 60vh;
+    height: 62vh;
     border-radius: 50px;
     margin-left: 24%;
     background-color: #F4D03F;
-    background-image: linear-gradient(132deg, #ffe600 0%, #07d233 100%);
+    background-image: linear-gradient(132deg, #ff0055 0%, #ff8521 50% ,#0736d2);
 }
 .container3-1{
+    color: #fff;
+    padding-top: 20px;
     font-size: 48px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -39,6 +41,7 @@ input{
     margin-left: 20%;
 }
 .container3-2{
+    color: #fff;
     font-size: 45px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -61,7 +64,7 @@ input{
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bolder;
-    color: black;
+    color: white;
     margin-left: 18%;
 }
 .temp2{
@@ -70,26 +73,26 @@ input{
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bolder;
-    color: black;
+    color: #fff;
     margin-left: 18%;
     margin-top: 3%;
 }
 .clear-btn{
-    color: #fff;
+    color: black;
     width: fit-content;
     font-size: 35px;
     font-family: sans-serif;
     font-weight: bolder;
     padding: 2px 55px;
-    background-color: rgb(15, 19, 7);
+    background-color: white;
     border: 2px solid white;
     border-radius: 13px;
     margin-left: 47%;
     margin-top: -2%;
 }
 .clear-btn:hover{
-    color: black;
-    border: 3px solid black;
+    color: white;
+    border: 1px solid white;
     border-radius: 13px;
-    background-color: transparent;
+    background-color: black;
 }
